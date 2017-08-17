@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Name:Kirandeeep Kaur
+ * Date:17/August/2017
+ * StudentID:300915966
+ * Description:Created Splash Form and shows splash form first.
+ * Version:0.2
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +15,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-/*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
- */
-
 namespace COMP123_S2017_FinalExam_StudentID
 {
     public partial class SplashForm : Form
@@ -24,17 +23,18 @@ namespace COMP123_S2017_FinalExam_StudentID
         {
             InitializeComponent();
         }
-
         /// <summary>
-        /// This is the SplashFormTimer's "Tick" event handler method
+        /// This is event handler for the "tick"
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void SplashFormTimer_Tick(object sender, EventArgs e)
+        private void SplashFormtimer_Tick(object sender, EventArgs e)
         {
-            SplashFormTimer.Enabled = false;
+            PickHighestCardForm pickhighestcardform = new PickHighestCardForm();
+             pickhighestcardform.Show();
             this.Hide();
-            Program.pickHighestCardForm.Show();
+            SplashFormtimer.Enabled = false;
+
         }
     }
 }
