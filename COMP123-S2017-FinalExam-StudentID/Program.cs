@@ -8,7 +8,7 @@ using System.Windows.Forms;
  * Name:Kirandeeep Kaur
  * Date:17/August/2017
  * StudentID:300915966
- * Description:This is main program to run a splash form
+ * Description:This is main program to run a splash form.
  * Version:0.1 
  */
 
